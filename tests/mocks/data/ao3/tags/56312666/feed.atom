@@ -34,7 +34,7 @@
 <script src="/javascripts/livevalidation_standalone.js"></script>
 
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="TioCCvHZ3qgKOdO2GPjAVRplqYC9pTDk09kfyvJS1WgFSNaBoEkCSwSWHMGCdUS82MoHj3-sCzXZOt1I34QjaQ" />
+<meta name="csrf-token" content="HhVojd27z6hLHXdGavym_H5sHcTs8PvkKdYpou9bw7s5yUF9yhmllcQjqY-mEwuAsg2oJi9KeqNZfSsPIIh-Sg" />
 
     
   </head>
@@ -57,7 +57,7 @@
         <a id="login-dropdown" href="/users/login?return_to=%2F404%3Fview_adult%3Dtrue">Log In</a>
       </p>
       <div id="small_login" class="simple login">
-	<form class="new_user" id="new_user_session_small" action="/users/login?return_to=%2F404%3Fview_adult%3Dtrue" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="DtMqi6XcwhYH32iTgUKmNQSNMDqoDIEvDNZ9jspa3DhU1NDCuVdtu2gqoDlG9ooz4h8IFsuFnkPfN3hNOmU99w" autocomplete="off" />
+	<form class="new_user" id="new_user_session_small" action="/users/login?return_to=%2F404%3Fview_adult%3Dtrue" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="UhM-6dzZ-sVjEN9_rx30bnFqbuTj5cR4UplkJQLJLb6mSLJppdy6rdXNoVZBMa7gANXY963PTqAaWwwTxcEeCg" autocomplete="off" />
   <dl>
     <dt><label for="user_session_login_small">Username or email:</label></dt>
     <dd><input autocomplete="on" id="user_session_login_small" type="text" name="user[login]" /></dd>
@@ -138,7 +138,7 @@
     <p>
       <label class="landmark" for="site_search">Work Search</label>
       <input class="text" id="site_search" aria-describedby="site_search_tooltip" type="text" name="work_search[query]" />
-      <span class="tip" role="tooltip" id="site_search_tooltip">tip: words:100</span>
+      <span class="tip" role="tooltip" id="site_search_tooltip">tip: buffy gen teen AND &quot;no archive warnings apply&quot;</span>
       <span class="submit actions"><input type="submit" value="Search" class="button" /></span>
     </p>
   </fieldset>
@@ -152,6 +152,16 @@
 
 </header>
 
+    <div class="event announcement group" id="admin-banner">
+      <blockquote class="userstuff">
+        <p align="center">
+  <strong>It's the 12th International Fanworks Day!</strong>
+</p><p align="center">For the twelfth International Fanworks Day, we are once again hosting our traditional 30-hour Discord server with chatrooms and games, so come celebrate with us! Find out about <a href="https://archiveofourown.org/admin_posts/34481" rel="nofollow">everything happening</a> today.</p>
+      </blockquote>
+        <p class="submit">
+          <a aria-label="hide banner" class="showme action" href="/404.atom?hide_banner=true&amp;id=56312666&amp;view_adult=true"><span aria-hidden="true">&times;</span></a>
+        </p>
+    </div>
 
 
 <!-- END header -->
@@ -199,7 +209,7 @@
       <h4 class="heading">Development</h4>
       <ul class="menu">
           <li>
-            <a href="https://github.com/otwcode/otwarchive/commits/v0.9.452.1">otwarchive v0.9.452.1</a>
+            <a href="https://github.com/otwcode/otwarchive/commits/v0.9.458.3">otwarchive v0.9.458.3</a>
           </li>
         <li><a href="/known_issues">Known Issues</a></li>
         <li>
