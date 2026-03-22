@@ -45,7 +45,7 @@ describe("Tags/search", () => {
         "Belphegor (Helluva Boss)",
         "Bethesda Von Eldritch",
         "Bryrin (Hazbin Hotel)",
-        "Cannibal Child Vaggie Spares in Flashback (Hazbin Hotel)",
+        "Cannibal Child Vaggi | Vaggie Spares in Flashback (Hazbin Hotel)",
         "Cannibal Town Ensemble (Hazbin Hotel)",
         "Captive Alastor's Swivel Chair (Hazbin Hotel)",
         "Carmilla Carmine (Hazbin Hotel)",
@@ -130,8 +130,10 @@ describe("Tags/search", () => {
         "Original Children of Alastor and Lucifer Magne | Morningstar",
         "Original Hazbin Hotel Character(s)",
         "Original Magne | Morningstar Character(s)",
+        "Overexposed Demon | Demon the Vees Exploit in Hazbin Guarantee (Trust Us)",
         "Overlords (Hazbin Hotel)",
         "Prick (Hazbin Hotel)",
+        "Queef | Valentino's Pet (Hazbin Hotel)",
         "Razzle (Hazbin Hotel)",
         "Redhead TV Host (Hazbin Hotel)",
         "Robert "Bob" Sinclaire (Hazbin Hotel)",
@@ -149,11 +151,9 @@ describe("Tags/search", () => {
         "St. Peter (Hazbin Hotel)",
         "Summer (Hazbin Hotel)",
         "Susan (Hazbin Hotel)",
+        "The Archangels (Hazbin Hotel)",
         "The Egg Bois (Hazbin Hotel)",
         "The Seven Deadly Sins (Hazbin Hotel & Helluva Boss)",
-        "The Speaker of God (Hazbin Hotel)",
-        "The Three V's (Hazbin Hotel)",
-        "Tiffany Titfucker (Hazbin Hotel)",
       ]
     `);
   });
@@ -182,6 +182,9 @@ describe("Tags/search", () => {
     // because this fandom gets a lot of new works
     expect(result.tags.map((tag) => tag.name)).toMatchInlineSnapshot(`
       [
+        "The Speaker of God (Hazbin Hotel)",
+        "The Three V's (Hazbin Hotel)",
+        "Tiffany Titfucker (Hazbin Hotel)",
         "Tom Trench",
         "Travis (Hazbin Hotel)",
         "Travis's Wife (Hazbin Hotel)",
@@ -199,6 +202,8 @@ describe("Tags/search", () => {
         "Vox's Assistant (Hazbin Hotel)",
         "Vox's Father (Hazbin Hotel)",
         "Vox's Mother (Hazbin Hotel)",
+        "Vox's Producers (Hazbin Hotel)",
+        "White-Haired Exorcist from Vaggi | Vaggie's Flashback (Hazbin Hotel)",
         "Zeezi (Hazbin Hotel)",
         "Zestial (Hazbin Hotel)",
       ]
