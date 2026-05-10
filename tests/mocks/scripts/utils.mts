@@ -75,6 +75,11 @@ export async function downloadWithRetry(
 
     return await response.text();
   } catch (error) {
+    // 404 may be expected (and isn't really recoverable)
+    if (error instanceof Http404Error) {
+      throw error;
+    }
+
     const errorMessage = error instanceof Error ? error.message : String(error);
     if (currentAttempt >= maxAttempts) {
       throw error;
