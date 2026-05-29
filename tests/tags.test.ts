@@ -367,22 +367,38 @@ describe("Tags/sub", () => {
   });
 
   it("should fetch subtags and sub-subtags", async () => {
-    const tag = await getTag({ tagName: "Dysphoria" });
+    const tag = await getTag({ tagName: "Wings" });
 
-    expect(tag).toMatchObject({
-      name: "Dysphoria",
-      subTags: [
-        { tagName: "Body Dysphoria", parentSubTag: null },
-        {
-          tagName: "Nott | Veth Brenatto Has Body Dysphoria",
-          parentSubTag: "Body Dysphoria",
-        },
-        { tagName: "Gender Dysphoria", parentSubTag: null },
-        {
-          "parentSubTag": "Gender Dysphoria",
-          "tagName": "TommyInnit Has Gender Dysphoria (Video Blogging RPF)",
-        }
-      ],
+    expect(tag.name).toBe("Wings");
+    // Level 1 subtag (parentSubTag: null)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: null,
+      tagName: "Wing Kink",
+    });
+    // Level 2 subtag (parentSubTag is Level 1)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: "Wing Kink",
+      tagName: "Castiel/Dean Winchester Wing Kink",
+    });
+    // Level 2 subtag (parentSubTag is Level 1)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: "Wing Kink",
+      tagName: "Dean Winchester Has a Wing Kink",
+    });
+    // Level 1 subtag (parentSubTag: null)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: null,
+      tagName: "Sunday Has Wings (Honkai: Star Rail)",
+    });
+    // Level 2 subtag (parentSubTag is Level 1)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: "Sunday Has Wings (Honkai: Star Rail)",
+      tagName: "Sunday Has Additional Wings (Honkai: Star Rail)",
+    });
+    // Level 3 subtag (parentSubTag is Level 2)
+    expect(tag.subTags).toContainEqual({
+      parentSubTag: "Sunday Has Additional Wings (Honkai: Star Rail)",
+      tagName: "Sunday's Vagina Has Wings (Honkai: Star Rail)",
     });
   });
 
@@ -399,6 +415,50 @@ describe("Tags/sub", () => {
         {
           "parentSubTag": null,
           "tagName": "Earth C Worldbuilding (Homestuck)",
+        },
+        {
+          "parentSubTag": null,
+          "tagName": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+          "tagName": "Eridian Culture & Customs (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+          "tagName": "Eridian Government & Politics (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+          "tagName": "Eridian Language & Grammar (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+          "tagName": "Eridian Science (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Lore & Worldbuilding (Project Hail Mary)",
+          "tagName": "Eridian Thrums (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Culture & Customs (Project Hail Mary)",
+          "tagName": "Eridian Music (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Culture & Customs (Project Hail Mary)",
+          "tagName": "Eridian Religions (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Language & Grammar (Project Hail Mary)",
+          "tagName": "Ryland Grace Speaks Eridian",
+        },
+        {
+          "parentSubTag": "Eridian Science (Project Hail Mary)",
+          "tagName": "Eridian Base-6 Math (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Science (Project Hail Mary)",
+          "tagName": "Eridian Biology (Project Hail Mary)",
         },
         {
           "parentSubTag": null,
@@ -570,6 +630,7 @@ describe("Tags/synonyms", () => {
         "Brief Charlie Magne | Morningstar cameo",
         "Brief Charlie Morningstar - Character",
         "cahrlie",
+        "Charles Morningstar",
         "Charlie (briefly mentioned)",
         "Charlie (Hazbin Hotel)",
         "Charlie (Hazbin Hotel) (mentioned)",
@@ -622,6 +683,7 @@ describe("Tags/synonyms", () => {
         "Charlie Morningstar (mentioned)",
         "Charlie Morningstar - Mentioned",
         "Charlie Morningstar implied",
+        "Charlie Morningstar | Ghost-Spider",
         "Charlie Morningstar(Hazbin Hotel)",
         "Charlie Morningstar/Magne",
         "charlie's mentioned near the end",
@@ -673,6 +735,7 @@ describe("Tags/synonyms", () => {
         "Mentions of Charlie Magne | Morningstar",
         "Mentions of Charlie Morningstar - Character",
         "Minor Charlie Magne | Morningstar - Character",
+        "Minor Charlie Morningstar",
         "Princess Charlie (Hazbin Hotel)",
         "Princess Charlotte Morningstar - Character",
         "Referenced Charlie",
@@ -693,4 +756,3 @@ describe("Tags/synonyms", () => {
     });
   });
 });
-
