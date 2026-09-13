@@ -242,6 +242,7 @@ describe("Tags/parent", () => {
         "Adventures of Sherlock Holmes and Dr. Watson (TV Russia)",
         "Art in the Blood - Brian Stableford",
         "Baskerville: A Sherlock Holmes Mystery - Ludwig",
+        "Crushed In Time (Video Game)",
         "Dr. Jekyll and Mr. Holmes - Loren D. Estleman",
         "Dr. Watson Thrillers - Robert Ryan",
         "Dust and Shadow - Lyndsay Faye",
@@ -260,18 +261,21 @@ describe("Tags/parent", () => {
         "Mary Russell - Laurie R. King",
         "Miss Holmes - Walsh",
         "Moriarty (Treefort Media Podcast)",
+        "Moriarty: Zwischen Genie und Verbrechen (Maritim Audio Drama)",
         "Mr. Holmes (2015)",
         "Ms. Holmes & Ms. Watson – Apt. 2B - Hamill",
         "Murder by Decree (1979)",
         "Mycroft Holmes Series - Janina Woods",
         "Mycroft Holmes Series - Kareem Abdul-Jabbar & Anna Waterhouse",
         "Mycroft Holmes Series - Quinn Fawcett",
+        "O Xangô de Baker Street | A Samba for Sherlock - Jô Soares",
         "Professor Moriarty Series - Michael Kurland",
         "Puppet Holmes (Web Series)",
         "Sherlock & Co. (Podcast)",
         "Sherlock & Daughter (TV)",
         "Sherlock (BBC TV 2010)",
         "Sherlock Holmes & Related Fandoms",
+        "Sherlock Holmes & the Servants of Hell - Paul Kane",
         "Sherlock Holmes (Asylum 2010)",
         "Sherlock Holmes (Big Finish Audio)",
         "Sherlock Holmes (Downey Movies)",
@@ -281,6 +285,7 @@ describe("Tags/parent", () => {
         "Sherlock Holmes (TV 1964)",
         "Sherlock Holmes (TV 1965)",
         "Sherlock Holmes - Arthur Conan Doyle",
+        "Sherlock Holmes - Joel Horwood (Play)",
         "Sherlock Holmes - John Taylor",
         "Sherlock Holmes and Doctor Watson (TV 1980)",
         "Sherlock Holmes and the Adventure of the Furtive Festivity (2018)",
@@ -319,6 +324,7 @@ describe("Tags/parent", () => {
         "The Private Life of Sherlock Holmes (1970)",
         "The Sexual Adventures of Sherlock Holmes - Larry Townsend",
         "The Testament of Sherlock Holmes (Video Game)",
+        "The Whole Art of Detection: Lost Mysteries of Sherlock Holmes - Lyndsay Faye",
         "There Is No Game: Wrong Dimension (Video Game)",
         "Victorian Undead: Sherlock Holmes vs Zombies! (Comics)",
         "Watson (TV 2025)",
@@ -442,6 +448,10 @@ describe("Tags/sub", () => {
         },
         {
           "parentSubTag": "Eridian Culture & Customs (Project Hail Mary)",
+          "tagName": "Eridian Courtship Rituals (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Culture & Customs (Project Hail Mary)",
           "tagName": "Eridian Music (Project Hail Mary)",
         },
         {
@@ -453,12 +463,40 @@ describe("Tags/sub", () => {
           "tagName": "Ryland Grace Speaks Eridian",
         },
         {
+          "parentSubTag": "Eridian Language & Grammar (Project Hail Mary)",
+          "tagName": "The Convict | Simon (Iron Lung) Speaks Eridian (Project Hail Mary)",
+        },
+        {
           "parentSubTag": "Eridian Science (Project Hail Mary)",
           "tagName": "Eridian Base-6 Math (Project Hail Mary)",
         },
         {
           "parentSubTag": "Eridian Science (Project Hail Mary)",
           "tagName": "Eridian Biology (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Science (Project Hail Mary)",
+          "tagName": "Eridian Technology (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Biology (Project Hail Mary)",
+          "tagName": "Eridians Can Purr (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Biology (Project Hail Mary)",
+          "tagName": "Eridians Do Not Have Genders (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridian Biology (Project Hail Mary)",
+          "tagName": "Eridians Have Ovipositors (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridians Can Purr (Project Hail Mary)",
+          "tagName": "Purring Rocky (Project Hail Mary)",
+        },
+        {
+          "parentSubTag": "Eridians Have Ovipositors (Project Hail Mary)",
+          "tagName": "Rocky Has an Ovipositor (Project Hail Mary)",
         },
         {
           "parentSubTag": null,
@@ -546,6 +584,14 @@ describe("Tags/sub", () => {
         },
         {
           "parentSubTag": "Uchiha Clan Lore (Naruto)",
+          "tagName": "Red Eyes are Blessed by Amaterasu (Naruto)",
+        },
+        {
+          "parentSubTag": "Uchiha Clan Lore (Naruto)",
+          "tagName": "Sharingan Exchange as Marriage (Naruto)",
+        },
+        {
+          "parentSubTag": "Uchiha Clan Lore (Naruto)",
           "tagName": "Uchiha Clan Politics (Naruto)",
         },
         {
@@ -583,6 +629,10 @@ describe("Tags/sub", () => {
         {
           "parentSubTag": "Vidyadhara Lore and Worldbuilding (Honkai: Star Rail)",
           "tagName": "Vidyadhara Biology (Honkai: Star Rail)",
+        },
+        {
+          "parentSubTag": null,
+          "tagName": "Wolfblood Worldbuilding (Wolfblood TV)",
         },
         {
           "parentSubTag": null,
@@ -670,6 +720,7 @@ describe("Tags/synonyms", () => {
         "Charlie Magne-Morningstar",
         "Charlie Magnet",
         "Charlie Magne| Morningstar (Hazbin Hotel)",
+        "Charlie Magne|Morningstar",
         "Charlie Mange",
         "Charlie Mange | Morningstar",
         "Charlie Mange | Morningstar (Hazbin Hotel)",
@@ -681,6 +732,7 @@ describe("Tags/synonyms", () => {
         "Charlie Morningstar (Hazbin Hotel)",
         "Charlie Morningstar (Hazbin Hotel) (mentioned)",
         "Charlie Morningstar (mentioned)",
+        "Charlie Morningstar (mentioned).",
         "Charlie Morningstar - Mentioned",
         "Charlie Morningstar implied",
         "Charlie Morningstar | Ghost-Spider",
@@ -705,6 +757,7 @@ describe("Tags/synonyms", () => {
         "College Student Charlie - Character",
         "Cursed Cat Charlie",
         "Danny Do-Bad (Hazbin Hotel)",
+        "Danny-Do-Bad - Character",
         "Dark Charlie Magne | Morningstar - Character",
         "Dark!Queen Charlie",
         "Demeter Charlie",
@@ -740,8 +793,10 @@ describe("Tags/synonyms", () => {
         "Princess Charlotte Morningstar - Character",
         "Referenced Charlie",
         "Single Mom Charlie Morningstar - Character",
+        "Sugar Mommy!Charlie",
         "swap charlie",
         "Swapped Charlie Morningstar",
+        "The Diabolical Danny-Do-Bad",
         "The Savant | Charlie Morningstar",
       ]
     `);
